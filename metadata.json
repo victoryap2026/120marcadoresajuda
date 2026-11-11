@@ -1,0 +1,8 @@
+{
+  "name": "Marcadores portugues",
+  "description": "Marcadores católicos de página para imprimir em apoio a crianças em tratamento de saúde. Escolha o valor da ajuda e receba 120 marcadores com orações.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

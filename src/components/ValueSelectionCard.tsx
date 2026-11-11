@@ -48,19 +48,31 @@ export const ValueSelectionCard: React.FC<ValueSelectionCardProps> = ({
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-3 mt-3 sm:mt-4">
           {HELP_OPTIONS.map((opt) => {
             const isSelected = selectedValue === opt.value;
+            const isPopular = opt.value === 20;
+
             return (
-              <button
-                key={opt.value}
-                type="button"
-                onClick={() => onSelectValue(opt.value)}
-                className={`py-2.5 sm:py-3 px-2 sm:px-3 text-center rounded-xl font-semibold text-xs sm:text-base transition-all duration-200 border cursor-pointer ${
-                  isSelected
-                    ? 'bg-[#0B2A5B] text-white border-[#0B2A5B] shadow-md ring-2 ring-[#0B2A5B]/20 scale-[1.02]'
-                    : 'bg-slate-50 text-slate-700 border-slate-200 hover:border-slate-300 hover:bg-slate-100'
-                }`}
-              >
-                {opt.label}
-              </button>
+              <div key={opt.value} className="relative">
+                {/* Tag discreta de relevância no plano de 20 */}
+                {isPopular && (
+                  <span className="absolute -top-2 left-1/2 -translate-x-1/2 z-10 text-[9px] font-bold uppercase tracking-wider bg-[#C9A24B] text-[#0B2A5B] px-1.5 py-0.2 rounded-full shadow-2xs border border-white whitespace-nowrap">
+                    Mais escolhido
+                  </span>
+                )}
+
+                <button
+                  type="button"
+                  onClick={() => onSelectValue(opt.value)}
+                  className={`w-full py-2.5 sm:py-3 px-2 sm:px-3 text-center rounded-xl font-semibold text-xs sm:text-base transition-all duration-200 border cursor-pointer relative ${
+                    isSelected
+                      ? 'bg-[#0B2A5B] text-white border-[#0B2A5B] shadow-md ring-2 ring-[#0B2A5B]/20 scale-[1.02]'
+                      : isPopular
+                        ? 'bg-amber-50/60 text-[#0B2A5B] border-amber-300/80 hover:bg-amber-100/60 hover:border-amber-400'
+                        : 'bg-slate-50 text-slate-700 border-slate-200 hover:border-slate-300 hover:bg-slate-100'
+                  }`}
+                >
+                  {opt.label}
+                </button>
+              </div>
             );
           })}
         </div>

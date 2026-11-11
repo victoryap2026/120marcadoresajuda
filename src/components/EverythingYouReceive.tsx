@@ -85,16 +85,17 @@ export const EverythingYouReceive: React.FC = () => {
               className="bg-white rounded-2xl p-5 sm:p-6 border border-slate-200/80 shadow-xs flex flex-col justify-between hover:border-[#C9A24B]/50 transition-colors"
             >
               <div>
-                {/* Espaço de imagem vertical proporcional (2:3) */}
-                <div className="w-full aspect-[2/3] rounded-xl overflow-hidden shadow-xs border border-slate-200/80 bg-slate-100 flex flex-col items-center justify-center p-2 text-slate-400 mb-4">
-                  {bonus.imageUrl ? (
-                    <img
-                      src={bonus.imageUrl}
-                      alt={bonus.title}
-                      className="w-full h-full object-cover rounded-lg"
-                      loading="lazy"
-                    />
-                  ) : (
+                {/* Espaço de imagem vertical proporcional (2:3) ligeiramente reduzido */}
+                <div className="flex justify-center mb-3.5">
+                  <div className="w-full max-w-[210px] aspect-[2/3] rounded-xl overflow-hidden shadow-xs border border-slate-200/80 bg-slate-100 flex flex-col items-center justify-center p-1.5 text-slate-400">
+                    {bonus.imageUrl ? (
+                      <img
+                        src={bonus.imageUrl}
+                        alt={bonus.title}
+                        className="w-full h-full object-cover rounded-lg"
+                        loading="lazy"
+                      />
+                    ) : (
                     <div className="flex flex-col items-center justify-center text-center p-3">
                       <div className="w-10 h-10 rounded-xl bg-white/90 border border-slate-200 flex items-center justify-center mb-2 shadow-2xs">
                         <ImageIcon className="w-5 h-5 text-slate-400" />
@@ -107,6 +108,7 @@ export const EverythingYouReceive: React.FC = () => {
                       </span>
                     </div>
                   )}
+                  </div>
                 </div>
 
                 {/* Etiquetas: BÔNUS e INCLUSO */}

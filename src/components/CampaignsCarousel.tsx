@@ -2,17 +2,17 @@ import React from 'react';
 import { CAMPAIGN_PRINTS } from '../data/campaignData';
 
 export const CampaignsCarousel: React.FC = () => {
-  // Duplicamos a lista de 7 itens para loop infinito contínuo e sem saltos
+  // Duplicamos a lista de itens para loop infinito contínuo e sem saltos
   const repeatedPrints = [...CAMPAIGN_PRINTS, ...CAMPAIGN_PRINTS];
 
   return (
     <section className="w-full py-8 sm:py-12 overflow-hidden bg-gradient-to-b from-transparent via-[#F7F9FC]/60 to-transparent">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 text-center mb-5 sm:mb-8">
         <h2 className="font-serif text-xl sm:text-2xl md:text-3xl font-bold text-[#0B2A5B] tracking-tight">
-          Campanhas que já ajudamos
+          Para onde vai a sua ajuda
         </h2>
         <p className="mt-1.5 text-xs sm:text-sm text-slate-500 max-w-lg mx-auto [text-wrap:balance]">
-          Conheça algumas das pessoas que já receberam o apoio da nossa comunidade.
+          Conheça algumas das pessoas que recebem o apoio da nossa comunidade.
         </p>
       </div>
 

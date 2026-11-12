@@ -238,11 +238,6 @@ export const CAMPAIGN_PRINTS: CampaignPrint[] = [
     imageUrl: '/images/campanha_01.webp',
   },
   {
-    id: 'campanha-2',
-    title: 'Jovem de 22 anos com síndrome de Stickler',
-    imageUrl: '/images/campanha_02.webp',
-  },
-  {
     id: 'campanha-3',
     title: 'Bebê de 1 mês e meio com glaucoma congênito',
     imageUrl: '/images/campanha_03.webp',
@@ -253,18 +248,28 @@ export const CAMPAIGN_PRINTS: CampaignPrint[] = [
     imageUrl: '/images/campanha_04.webp',
   },
   {
-    id: 'campanha-5',
-    title: 'Adolescente de 17 anos com leucemia',
-    imageUrl: '/images/campanha_05.webp',
-  },
-  {
-    id: 'campanha-6',
-    title: 'Jovem com tumor na medula espinhal',
-    imageUrl: '/images/campanha_06.webp',
-  },
-  {
     id: 'campanha-7',
     title: 'Menina de 1 ano e 8 meses em tratamento',
     imageUrl: '/images/campanha_07.webp',
+  },
+  {
+    id: 'campanha-8',
+    title: 'Riley fez cirurgia de coração e aguarda transplante',
+    imageUrl: '/images/campanha_08.webp',
+  },
+  {
+    id: 'campanha-9',
+    title: 'Kaiden sorri sempre, apesar da doença',
+    imageUrl: '/images/campanha_09.webp',
+  },
+  {
+    id: 'campanha-10',
+    title: 'Honzík luta contra um câncer no fígado',
+    imageUrl: '/images/campanha_10.webp',
+  },
+  {
+    id: 'campanha-11',
+    title: 'Menina que sorri durante o tratamento contra o câncer',
+    imageUrl: '/images/campanha_11.webp',
   },
 ];

@@ -15,7 +15,7 @@ export const HeroBanner: React.FC<HeroBannerProps> = ({ onScrollToChoice }) => {
 
       {/* Subtítulo explicativo */}
       <p className="mt-2.5 sm:mt-4 text-[13px] sm:text-base text-slate-600 max-w-[340px] sm:max-w-lg md:max-w-xl mx-auto leading-relaxed font-normal [text-wrap:balance]">
-        Escolha o quanto deseja ajudar, receba os 120 marcadores na hora e imprima em&nbsp;casa.
+        Marcadores premium com Maria, Jesus, santos, anjos e versículos, ideais para Bíblia, missal, livros e devocionais
       </p>
 
       {/* Mockup do produto centralizado */}

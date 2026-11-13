@@ -40,7 +40,7 @@ export const HeroBanner: React.FC<HeroBannerProps> = ({ onScrollToChoice }) => {
           onClick={onScrollToChoice}
           className="w-full sm:w-auto px-4 sm:px-10 py-3 sm:py-4 bg-[#C9A24B] hover:bg-[#B58F38] active:bg-[#9E7828] text-white font-bold rounded-xl text-xs min-[360px]:text-[13px] sm:text-base shadow-md hover:shadow-lg transition-all duration-200 cursor-pointer inline-flex items-center justify-center gap-2 tracking-normal sm:tracking-wide uppercase whitespace-nowrap"
         >
-          <span>Quero ajudar e receber meus marcadores</span>
+          <span>Quero meus marcadores</span>
         </button>
         <span className="mt-2 text-[11px] sm:text-xs text-slate-500 font-normal [text-wrap:balance]">
           Pagamento seguro · Cartão e Pix · Garantia de 7&nbsp;dias

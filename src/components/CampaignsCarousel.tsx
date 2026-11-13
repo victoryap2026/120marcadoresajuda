@@ -12,7 +12,7 @@ export const CampaignsCarousel: React.FC = () => {
           Para onde vai a sua ajuda
         </h2>
         <p className="mt-1.5 text-xs sm:text-sm text-slate-500 max-w-lg mx-auto [text-wrap:balance]">
-          Conheça algumas das pessoas que recebem o apoio da nossa comunidade.
+          Você leva os 120 marcadores e, de cada compra, uma parte do lucro é direcionada a crianças em tratamento de saúde.
         </p>
       </div>
 

@@ -142,12 +142,12 @@ export const FAQ_ITEMS = [
   {
     question: 'Isto é uma doação?',
     answer:
-      'Não. Você adquire um produto digital completo e recebe tudo na hora. Parte do lucro é destinado ao apoio de crianças em tratamento de saúde.',
+      'Não. Você está comprando os 120 marcadores católicos e recebe tudo por e-mail. Parte do lucro de cada compra é direcionada a crianças em tratamento.',
   },
   {
     question: 'A quem chega a ajuda?',
     answer:
-      'A crianças em tratamento de saúde. Parte do lucro arrecadado é destinado a elas e suas famílias.',
+      'Parte do lucro das vendas é direcionada a crianças em tratamento de saúde. Depois do encerramento da arrecadação, enviamos o comprovante do repasse por e-mail.',
   },
   {
     question: 'Como recebo os marcadores?',

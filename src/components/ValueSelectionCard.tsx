@@ -257,7 +257,7 @@ export const ValueSelectionCard: React.FC<ValueSelectionCardProps> = ({
             onClick={() => onTriggerCheckout(selectedValue)}
             className="w-full sm:w-auto px-4 sm:px-8 py-3.5 bg-[#C9A24B] hover:bg-[#B58F38] active:bg-[#9E7828] text-white font-bold rounded-xl text-xs min-[360px]:text-[13px] sm:text-base shadow-md hover:shadow-lg transition-all duration-200 text-center cursor-pointer flex items-center justify-center gap-2 uppercase tracking-normal sm:tracking-wide whitespace-nowrap"
           >
-            <span>Quero ajudar e receber meus marcadores</span>
+            <span>Quero meus marcadores</span>
           </button>
         </div>
 

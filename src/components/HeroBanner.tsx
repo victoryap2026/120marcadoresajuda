@@ -24,8 +24,8 @@ export const HeroBanner: React.FC<HeroBannerProps> = ({ onScrollToChoice }) => {
     <section className="w-full max-w-4xl mx-auto px-4 sm:px-6 pt-4 sm:pt-8 pb-6 sm:pb-8 text-center">
       {/* Título com destaque dourado e quebra balanceada */}
       <h1 className="font-serif text-[22px] sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-snug sm:leading-tight tracking-tight text-[#0B2A5B] max-w-xl sm:max-w-2xl md:max-w-3xl mx-auto [text-wrap:balance]">
-        <span className="text-[#C9A24B] block sm:inline">Ajude crianças em&nbsp;tratamento</span>{' '}
-        <span>e receba 120 Marcadores Católicos de&nbsp;Páginas prontos para&nbsp;imprimir</span>
+        <span>120 Marcadores Católicos de&nbsp;Páginas prontos para&nbsp;imprimir e você ainda</span>{' '}
+        <span className="text-[#C9A24B]">ajuda crianças em&nbsp;tratamento</span>
       </h1>
 
       {/* Subtítulo explicativo */}

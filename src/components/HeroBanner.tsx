@@ -4,6 +4,21 @@ interface HeroBannerProps {
   onScrollToChoice: () => void;
 }
 
+declare module 'react' {
+  namespace JSX {
+    interface IntrinsicElements {
+      'wistia-player': React.DetailedHTMLProps<
+        React.HTMLAttributes<HTMLElement> & {
+          'media-id': string;
+          seo?: string;
+          aspect?: string;
+        },
+        HTMLElement
+      >;
+    }
+  }
+}
+
 export const HeroBanner: React.FC<HeroBannerProps> = ({ onScrollToChoice }) => {
   return (
     <section className="w-full max-w-4xl mx-auto px-4 sm:px-6 pt-4 sm:pt-8 pb-6 sm:pb-8 text-center">
@@ -18,18 +33,12 @@ export const HeroBanner: React.FC<HeroBannerProps> = ({ onScrollToChoice }) => {
         Escolha o quanto deseja ajudar, receba os 120 marcadores na hora e imprima em&nbsp;casa.
       </p>
 
-      {/* Mockup do produto centralizado */}
+      {/* Vídeo Wistia centralizado (formato vertical 9:16) */}
       <div className="mt-4 sm:mt-6 flex justify-center">
-        <div className="w-full max-w-[280px] sm:max-w-sm md:max-w-md rounded-2xl overflow-hidden shadow-md border border-slate-200/80 bg-white p-1.5 sm:p-2">
-          <img
-            src="/images/hero_bundle_pt.webp"
-            alt="Coleção oficial 120 Marcadores Católicos de Páginas prontos para imprimir"
-            className="w-full h-auto object-cover rounded-xl"
-            loading="eager"
-            decoding="async"
-            width={1200}
-            height={1200}
-          />
+        <div className="w-full max-w-[260px] sm:max-w-[300px] md:max-w-[330px] rounded-2xl overflow-hidden shadow-md border border-slate-200/80 bg-white p-1.5 sm:p-2">
+          <div className="w-full rounded-xl overflow-hidden bg-slate-900">
+            <wistia-player media-id="5d0fl2itka" seo="false" aspect="0.5625"></wistia-player>
+          </div>
         </div>
       </div>
 
